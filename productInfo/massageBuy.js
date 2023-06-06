@@ -8,7 +8,7 @@ function massageBuy(button, product, container) {
     lastButton.classList.add("last-button");
     lastButton.textContent = "Підтвердити";
     massageBlock.innerHTML = `
-    <div>${product.textContent} куплено</div>
+    <div>${product.nameProduct} куплено</div>
     `;
     massageBlock.append(lastButton);
     container.append(massageBlock);

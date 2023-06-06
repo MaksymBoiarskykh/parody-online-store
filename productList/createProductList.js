@@ -9,7 +9,7 @@ const createProduct = (list, category, data) => {
     listEl.textContent = item.nameProduct;
     list.append(listEl);
 
-    openInfoProduct(listEl, item.infoProduct, ".info_block");
+    openInfoProduct(listEl, item, ".info_block");
   });
 };
 

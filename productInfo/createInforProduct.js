@@ -7,9 +7,9 @@ function createInfo(product, container) {
   buyButon.setAttribute("href", "#");
 
   container.innerHTML = `
-  <div>announced: ${product.announced}</div>
-  <div>display: ${product.display}</div>
-  <div>camera: ${product.camera} </div>`;
+  <div>announced: ${product.infoProduct.announced}</div>
+  <div>display: ${product.infoProduct.display}</div>
+  <div>camera: ${product.infoProduct.camera} </div>`;
   container.append(buyButon);
 
   massageBuy(buyButon, product, container);
