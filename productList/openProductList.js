@@ -11,7 +11,7 @@ function openProduct(categoryClass, containerClass) {
 
   categories.addEventListener("click", () => {
     let categoryProduct = event.target.textContent;
-    createProduct(listProduct, categoryProduct, data);
+    createProduct(listProduct, categoryProduct, data, productContainer);
   });
 }
 

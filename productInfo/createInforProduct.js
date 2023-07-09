@@ -1,7 +1,7 @@
-import massageBuy from "./massageBuy.js";
+import createForm from "../form/createForm.js";
 
 //створюю текстове інформацію про товар
-function createInfo(product, container) {
+function createInfo(product, container, productContainer) {
   const buyButon = document.createElement("a");
   buyButon.textContent = "купити";
   buyButon.setAttribute("href", "#");
@@ -12,7 +12,7 @@ function createInfo(product, container) {
   <div>camera: ${product.infoProduct.camera} </div>`;
   container.append(buyButon);
 
-  massageBuy(buyButon, product, container);
+  createForm(buyButon, product, container, productContainer);
 }
 
 export default createInfo;

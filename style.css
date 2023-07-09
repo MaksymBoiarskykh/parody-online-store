@@ -55,14 +55,13 @@ a {
   border-radius: 5px;
 }
 
-.info_block .massage-block {
+.info_block form {
+  background: #fff;
   position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  padding: 20px 50px;
-  font-size: 20px;
+  padding: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
